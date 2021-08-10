@@ -516,13 +516,6 @@ int AES_EnCryption(const unsigned char* PlainText, const unsigned char* Key, uns
 		
 		AddRoundKey(PlainArray, ExtendKeyArray, 4 * i);
 
-		//ѧ�����һλΪ5���˴�������Կ��Ϊ��һ�ֵĿ�ʼ
-		/*if (i == 4)
-		{
-			char output[33] = { 0 };
-			byteToHex(PlainArray, output, 32);
-			printf("��5������Կ�ӵ���������%s\n", output);
-		}*/
 	}
 
 	Plain_S_Substitution((unsigned int*)PlainArray);
